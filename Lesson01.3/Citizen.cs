@@ -28,5 +28,10 @@ namespace Lesson01._3
                 return false;
             }
         }
+
+        public override string ToString()
+        {
+            return $"{Name} {Passport}"; 
+        }
     }
 }
