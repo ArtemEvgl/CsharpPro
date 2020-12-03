@@ -4,7 +4,7 @@ using System.Linq;
 using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
-using TempLib;
+//using TempLib;
 
 namespace Lesson06._2
 {
@@ -16,8 +16,8 @@ namespace Lesson06._2
             Assembly assembly = Assembly.Load("TempLib");
             Type type = assembly.GetType("TempLib.Class1");
             MethodInfo methodInfo = type.GetMethod("ConvertToFareng");
-            Class1 c1 = Activator.CreateInstance(type) as Class1;
-            double result = Convert.ToDouble(methodInfo.Invoke(c1, new object[] { 20 }));
+            //Class1 c1 = Activator.CreateInstance(type) as Class1;
+            //double result = Convert.ToDouble(methodInfo.Invoke(c1, new object[] { 20 }));
             Console.ReadKey();
         }
     }
